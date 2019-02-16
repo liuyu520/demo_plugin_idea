@@ -12,7 +12,7 @@ public class WindowMainMenuDemo extends AnAction {
     public void actionPerformed(AnActionEvent e) {
         // TODO: insert action logic here
         Project project = e.getProject();
-        Messages.showMessageDialog(project, "Hello world!22222", "Greeting22222", Messages.getInformationIcon());
+        /*  Messages.showMessageDialog(project, "Hello world!22222", "Greeting22222", Messages.getInformationIcon());*/
 
         boolean result = new SampleDialogWrapper().showAndGet();
         if (result) {
