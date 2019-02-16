@@ -30,13 +30,13 @@ public class DemoModuleType extends ModuleType<DemoModuleBuilder> {
     @NotNull
     @Override
     public String getName() {
-        return "Demo Module Type";
+        return "AECP Module Type";
     }
 
     @NotNull
     @Override
     public String getDescription() {
-        return "Demo Module Type";
+        return "AECP Module Type description";
     }
 
 
