@@ -6,8 +6,6 @@ import com.intellij.openapi.wm.ToolWindow;
 import com.swing.messagebox.GUIUtil23;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class ToolWindowForm {
     private JTextField appIdTextField1;
@@ -24,14 +22,15 @@ public class ToolWindowForm {
         this.project = project;
         this.toolWindow = toolWindow;
         cancelButton.addActionListener(e -> toolWindow.hide(null));
-        saveButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String appId = appIdTextField1.getText();
-                String appName = appNameTextField2.getText();
-                GUIUtil23.infoDialog(String.format("appId:%s,appName:%s", appId, appName));
+        saveButton.addActionListener(e -> {
+            String appId = appIdTextField1.getText();
+            String appName = appNameTextField2.getText();
+            GUIUtil23.infoDialog(String.format("appId:%s,appName:%s", appId, appName));
 
+            if (null != project) {
                 Messages.showMessageDialog(project, "Hello world!22222", "Greeting22222", Messages.getInformationIcon());
+            }
+            if (null != toolWindow) {
                 toolWindow.hide(null);
             }
         });

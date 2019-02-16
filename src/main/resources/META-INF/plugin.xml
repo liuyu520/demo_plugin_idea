@@ -27,6 +27,8 @@
                     factoryClass="com.kunlunsoft.dialog.MyToolWindow"/>
         <moduleBuilder builderClass="com.kunlunsoft.project.wizard.DemoModuleWizardStep" id="DEMO_STEP22"
                        order="first"/>
+        <moduleBuilder builderClass="com.kunlunsoft.project.wizard.DemoModuleWizardSecondStep" id="DEMO_STEP22Second2"
+                       order="after DEMO_STEP22"/>
 
     </extensions>
 
