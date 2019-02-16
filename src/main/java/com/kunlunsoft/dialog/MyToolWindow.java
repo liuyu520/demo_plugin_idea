@@ -17,7 +17,7 @@ public class MyToolWindow implements ToolWindowFactory {
      */
     @Override
     public void createToolWindowContent(@NotNull Project project, @NotNull ToolWindow toolWindow) {
-        ToolWindowForm myToolWindow = new ToolWindowForm(toolWindow);
+        ToolWindowForm myToolWindow = new ToolWindowForm(toolWindow, project);
         ContentFactory contentFactory = ContentFactory.SERVICE.getInstance();
         Content content = contentFactory.createContent(myToolWindow.getRootPanel(), "", false);
         toolWindow.getContentManager().addContent(content);
