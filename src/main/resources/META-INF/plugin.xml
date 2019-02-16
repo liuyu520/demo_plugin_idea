@@ -23,13 +23,19 @@
     -->
 
     <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="My Sample Tool Window" icon="/logo/toolWind.png" anchor="right"
+                    factoryClass="com.kunlunsoft.dialog.MyToolWindow"/>
+
     </extensions>
 
     <actions>
-        <group id="MyPlugin.SampleMenu" text="Greeting" description="Greeting menu">
+        <group id="MyPlugin.SampleMenu" text="Greeting主菜单栏" description="Greeting menu">
             <add-to-group group-id="MainMenu" anchor="last"/>
             <action id="Myplugin.Textboxes" class="com.kunlunsoft.HelloAction" text="Hello" description="Says hello"/>
+            <action id="ToolWindowDemo" class="com.kunlunsoft.menu.WindowMainMenuDemo"
+                    text="ToolWindowToolbarsDemo name" description="ToolWindowToolbarsDemo desc"/>
         </group>
+
     </actions>
 
 </idea-plugin>
