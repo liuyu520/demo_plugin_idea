@@ -25,10 +25,15 @@
     <extensions defaultExtensionNs="com.intellij">
         <toolWindow id="My Sample Tool Window" icon="/logo/toolWind.png" anchor="right"
                     factoryClass="com.kunlunsoft.dialog.MyToolWindow"/>
-        <moduleBuilder builderClass="com.kunlunsoft.project.wizard.DemoModuleWizardStep" id="DEMO_STEP22"
+        <!--<moduleBuilder builderClass="com.kunlunsoft.project.wizard.DemoModuleWizardStep" id="DEMO_STEP22"
                        order="first"/>
         <moduleBuilder builderClass="com.kunlunsoft.project.wizard.DemoModuleWizardSecondStep" id="DEMO_STEP22Second2"
-                       order="after DEMO_STEP22"/>
+                       order="after DEMO_STEP22"/>-->
+
+        <moduleBuilder builderClass="com.kunlunsoft.project.wizard.better.DemoModuleBuilder" id="DEMO_STEP22Second2"
+                       order="first"/>
+        <!--项目类型-->
+        <moduleType id="DEMO_MODULE_TYPE" implementationClass="com.kunlunsoft.project.wizard.better.DemoModuleType"/>
 
     </extensions>
 
