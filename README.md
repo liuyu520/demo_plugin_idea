@@ -24,3 +24,4 @@ Please ensure JAVA_HOME points to JDK rather than JRE
 https://github.com/liuyu520/intellij-bpmn-editor
 https://sourceforge.net/projects/bpmn/
 https://sourceforge.net/projects/asaf/
+https://github.com/Blenta/intellij-bpmn-editor
