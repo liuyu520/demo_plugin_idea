@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.kunlunsoft'
-version '1.0.0-SNAPSHOT'
+version '1.0.1-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
@@ -22,6 +22,7 @@ dependencies {
 
 intellij {
     version '2018.1.6'
+    intellij.updateSinceUntilBuild false /* 解决 plugin.xml 中版本被 gradle 替换的问题 */
 }
 patchPluginXml {
     changeNotes """
