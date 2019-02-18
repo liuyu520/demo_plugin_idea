@@ -23,7 +23,7 @@
     -->
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow id="My Sample Tool Window" icon="/logo/toolWind.png" anchor="right"
+        <toolWindow id="AECP 控制台" icon="/logo/toolWind.png" anchor="right"
                     factoryClass="com.kunlunsoft.dialog.MyToolWindow"/>
         <!--<moduleBuilder builderClass="com.kunlunsoft.project.wizard.DemoModuleWizardStep" id="DEMO_STEP22"
                        order="first"/>
@@ -50,15 +50,15 @@
     </extensions>
 
     <actions>
-        <group id="MyPlugin.SampleMenu" text="Greeting主菜单栏" description="Greeting menu">
+        <group id="MyPlugin.SampleMenu" text="AECP 首选项" description="Greeting menu">
             <add-to-group group-id="MainMenu" anchor="last"/>
-            <action id="Myplugin.Textboxes" class="com.kunlunsoft.HelloAction" text="Hello" description="Says hello"/>
+            <action id="Myplugin.Textboxes" class="com.kunlunsoft.HelloAction" text="业务逻辑编排" description="Says hello"/>
             <action id="ToolWindowDemo" class="com.kunlunsoft.menu.WindowMainMenuDemo"
-                    text="ToolWindowToolbarsDemo name" description="ToolWindowToolbarsDemo desc"/>
+                    text="元数据集配置" description="ToolWindowToolbarsDemo desc"/>
         </group>
 
         <action id="yaoqiang.actions.NewBPMNFileAction" class="org.yaoqiang.bpmn.intellij.actions.NewBPMNFileAction"
-                text="BPMN 2.0 XML" description="OMG BPMN 2.0 XML">
+                text="AECP 工作流设计" description="OMG BPMN 2.0 XML">
             <add-to-group group-id="NewXml" anchor="before" relative-to-action="NewHtmlFile"/>
         </action>
         <group id="yaoqiang.actions.BPMNModelMenu"
