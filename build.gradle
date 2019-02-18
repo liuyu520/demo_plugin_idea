@@ -14,8 +14,10 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile project.fileTree(dir:'/Users/whuanghkl/code/mygit/io0007/target',include:['io0007-0.0.1-SNAPSHOT.jar'])
+    compile project.fileTree(dir:'/Users/hanjun/Documents/mygit/demo/io0007/target',include:['*.jar'])
+    compile project.fileTree(dir:'/Users/hanjun/Documents/mygit/demo/idea_plugin/intellij-bpmn-editor/lib',include:['*.jar'])
 //    compile 'com.kunlunsoft:io0007:0.0.1-SNAPSHOT'
+    compile 'com.fifesoft:rsyntaxtextarea:3.0.2'
 }
 
 intellij {

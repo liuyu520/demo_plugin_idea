@@ -35,6 +35,18 @@
         <!--项目类型-->
         <moduleType id="DEMO_MODULE_TYPE" implementationClass="com.kunlunsoft.project.wizard.better.DemoModuleType"/>
 
+
+        <fileTypeFactory implementation="org.yaoqiang.bpmn.intellij.editor.BPMNFileTypeFactory"/>
+        <fileEditorProvider implementation="org.yaoqiang.bpmn.intellij.editor.BPMNFileEditorProvider"/>
+        <xml.xmlExtension implementation="org.yaoqiang.bpmn.intellij.xml.BPMNFileExtension"/>
+        <xml.schemaProvider implementation="org.yaoqiang.bpmn.intellij.xml.BPMNFileSchemaProvider"/>
+        <xml.fileNSInfoProvider implementation="org.yaoqiang.bpmn.intellij.xml.BPMNFileNSInfoProvider"/>
+        <applicationConfigurable groupId="editor" id="preferences.BPMNEditor"
+                                 instance="org.yaoqiang.bpmn.intellij.options.BPMNFileEditorMainConfigurable"/>
+        <applicationConfigurable id="BPMNEditor.Diagram" parentId="preferences.BPMNEditor"
+                                 instance="org.yaoqiang.bpmn.intellij.options.BPMNFileEditorDiagramConfigurable"/>
+        <applicationConfigurable id="BPMNEditor.ElementStyles" parentId="preferences.BPMNEditor"
+                                 instance="org.yaoqiang.bpmn.intellij.options.BPMNFileEditorElementStylesConfigurable"/>
     </extensions>
 
     <actions>
@@ -45,6 +57,28 @@
                     text="ToolWindowToolbarsDemo name" description="ToolWindowToolbarsDemo desc"/>
         </group>
 
+        <action id="yaoqiang.actions.NewBPMNFileAction" class="org.yaoqiang.bpmn.intellij.actions.NewBPMNFileAction"
+                text="BPMN 2.0 XML" description="OMG BPMN 2.0 XML">
+            <add-to-group group-id="NewXml" anchor="before" relative-to-action="NewHtmlFile"/>
+        </action>
+        <group id="yaoqiang.actions.BPMNModelMenu"
+               class="org.yaoqiang.bpmn.intellij.actions.BPMNModelMenu" text="Model">
+            <add-to-group group-id="MainMenu" anchor="before" relative-to-action="ViewMenu"/>
+        </group>
+
+
     </actions>
+    <project-components>
+        <component>
+            <implementation-class>org.yaoqiang.bpmn.intellij.toolwindow.BPMNPaletteToolWindowManager
+            </implementation-class>
+        </component>
+    </project-components>
+
+    <application-components>
+        <component>
+            <implementation-class>org.yaoqiang.bpmn.intellij.BPMNEditor</implementation-class>
+        </component>
+    </application-components>
 
 </idea-plugin>
