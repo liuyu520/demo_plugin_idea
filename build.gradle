@@ -18,6 +18,9 @@ dependencies {
     compile project.fileTree(dir:'/Users/hanjun/Documents/mygit/demo/idea_plugin/intellij-bpmn-editor/lib',include:['*.jar'])
 //    compile 'com.kunlunsoft:io0007:0.0.1-SNAPSHOT'
     compile 'com.fifesoft:rsyntaxtextarea:3.0.2'
+//    compile 'jxbrowser:jxbrowser-mac:6.1.1'
+//    compile 'org.lobobrowser:LoboBrowser:1.0-SNAPSHOT'
+    compile 'com.vladsch.javafx-webview-debugger:javafx-webview-debugger:0.6.10'
 }
 
 intellij {
