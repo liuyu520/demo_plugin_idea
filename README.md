@@ -16,3 +16,11 @@ Please ensure JAVA_HOME points to JDK rather than JRE
 
 ## 参考
 [http://www.jetbrains.org/intellij/sdk/docs/tutorials/build_system/prerequisites.html](http://www.jetbrains.org/intellij/sdk/docs/tutorials/build_system/prerequisites.html)
+
+
+## 依赖的库
+/Users/hanjun/Documents/mygit/demo/idea_plugin/intellij-bpmn-editor/lib/
+
+https://github.com/liuyu520/intellij-bpmn-editor
+https://sourceforge.net/projects/bpmn/
+https://sourceforge.net/projects/asaf/

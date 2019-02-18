@@ -30,19 +30,19 @@ public class DemoModuleType extends ModuleType<DemoModuleBuilder> {
     @NotNull
     @Override
     public String getName() {
-        return "AECP Module Type";
+        return "AECP Application";
     }
 
     @NotNull
     @Override
     public String getDescription() {
-        return "AECP Module Type description";
+        return "AECP Application description";
     }
 
 
     @Override
     public Icon getNodeIcon(@Deprecated boolean b) {
-        return AllIcons.General.Information;
+        return AllIcons.General.Information;//this.getClass().getResource("")
     }
 
     @NotNull

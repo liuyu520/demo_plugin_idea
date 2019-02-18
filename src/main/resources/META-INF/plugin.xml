@@ -1,8 +1,8 @@
 <idea-plugin>
     <id>com.kunlunsoft.demo_plugin_idea</id>
-    <name>my_plugin</name>
+    <name>AECP_plugin</name>
     <version>0.0.1</version>
-    <vendor email="dummy" url="dummy">dummy</vendor>
+    <vendor email="hanjun.hw@alibaba-inc.com" url="dummy">dummy</vendor>
 
     <description><![CDATA[
       Sample plugin.<br>
