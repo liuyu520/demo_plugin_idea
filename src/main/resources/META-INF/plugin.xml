@@ -23,7 +23,7 @@
     -->
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow id="AECP 控制台" icon="/logo/toolWind.png" anchor="right"
+        <toolWindow id="AECP 控制台" icon="/logo/toolWind_gaitubao_com_13x13.png" anchor="right"
                     factoryClass="com.kunlunsoft.dialog.MyToolWindow"/>
         <!--<moduleBuilder builderClass="com.kunlunsoft.project.wizard.DemoModuleWizardStep" id="DEMO_STEP22"
                        order="first"/>
