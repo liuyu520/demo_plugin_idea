@@ -1,4 +1,4 @@
-package com.kunlunsoft;
+package com.kunlunsoft.menu;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;

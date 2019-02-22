@@ -3,14 +3,12 @@ package com.kunlunsoft.project.wizard.better;
 import com.intellij.ide.util.projectWizard.ModuleBuilder;
 import com.intellij.ide.util.projectWizard.ModuleWizardStep;
 import com.intellij.ide.util.projectWizard.WizardContext;
-import com.intellij.openapi.Disposable;
 import com.intellij.openapi.module.ModuleType;
 import com.intellij.openapi.options.ConfigurationException;
 import com.intellij.openapi.roots.ModifiableRootModel;
 import com.intellij.openapi.roots.ui.configuration.ModulesProvider;
 import com.kunlunsoft.form.ProjectCreateWizardFrom;
 import com.kunlunsoft.form.ToolWindowForm;
-import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
 
@@ -32,11 +30,11 @@ public class DemoModuleBuilder extends ModuleBuilder {
      * @param parentDisposable
      * @return
      */
-    @Nullable
+    /*@Nullable
     @Override
     public ModuleWizardStep getCustomOptionsStep(WizardContext context, Disposable parentDisposable) {
         return new DemoModuleWizardJustStep();
-    }
+    }*/
 
     /**
      * 优先级比 getCustomOptionsStep 低
